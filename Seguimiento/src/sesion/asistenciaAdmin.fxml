@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="asistencia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="840.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sesion.admin">
+   <children>
+      <VBox layoutX="14.0" layoutY="15.0" prefHeight="33.0" prefWidth="150.0">
+         <children>
+            <Label text="Grado" />
+            <ComboBox fx:id="c" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="186.0" layoutY="14.0" prefHeight="45.0" prefWidth="194.0">
+         <children>
+            <Label text="Grupo" />
+            <ComboBox prefWidth="150.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

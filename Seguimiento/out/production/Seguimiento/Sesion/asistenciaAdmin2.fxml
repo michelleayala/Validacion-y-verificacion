@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="asistencia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="840.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sesion.admin">
+   <children>
+      <Pane layoutX="14.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
+      <HBox layoutX="7.0" layoutY="13.0" prefHeight="51.0" prefWidth="832.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Grado" />
+                  <ComboBox fx:id="cbxGrado" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Grupo" />
+                  <ComboBox fx:id="cbxGrupo" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="51.0" prefWidth="176.0">
+               <children>
+                  <Label text="Fecha" />
+                  <DatePicker fx:id="fecha" editable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnBuscarAsistencia" mnemonicParsing="false" onAction="#ftnBuscarAsistencia" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

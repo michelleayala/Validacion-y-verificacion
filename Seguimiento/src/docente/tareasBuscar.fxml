@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docente.CreacionTareas">
+   <children>
+      <Label layoutX="160.0" layoutY="14.0" text="Manipulación de tareas">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="17.0" prefWidth="107.0" text="Nombre de la tarea:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NombreTarea" layoutX="125.0" layoutY="72.0" onKeyTyped="#ftnValidacionNombreTarea" prefHeight="25.0" prefWidth="374.0" />
+      <Button fx:id="Guardar" layoutX="205.0" layoutY="429.0" mnemonicParsing="false" onAction="#Guardar" prefHeight="28.0" prefWidth="76.0" text="Buscar">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbxGrupo" layoutX="270.0" layoutY="225.0" prefWidth="150.0" />
+      <Label layoutX="281.0" layoutY="178.0" text="Grupo" />
+      <ComboBox fx:id="cbxGrado" layoutX="46.0" layoutY="231.0" onHiding="#cargarCbxGrupo" onShowing="#cargarCbxGrado" prefWidth="150.0" />
+      <Label layoutX="88.0" layoutY="178.0" text="Grado" />
+      <JFXDialog layoutX="205.0" layoutY="470.0" />
+   </children>
+</Pane>

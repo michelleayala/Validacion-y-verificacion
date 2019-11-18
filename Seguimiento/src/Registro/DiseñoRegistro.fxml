@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Registro.Registro">
+    <children>
+        <VBox alignment="CENTER" layoutX="-1.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="401.0" prefWidth="400.0" spacing="12.0">
+            <children>
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Registrese" textFill="#1a84f4">
+                    <font>
+                        <Font name="Dubai Bold" size="35.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="Documento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionDocumento" onMouseClicked="#BorderColor_Documento" prefHeight="22.0" prefWidth="225.0" promptText="Documento" />
+                <TextField fx:id="Nombres" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionNombresApelldios" prefHeight="22.0" prefWidth="225.0" promptText="Nombres" />
+                <TextField fx:id="Apellidos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionNombresApelldios" prefHeight="22.0" prefWidth="225.0" promptText="Apellidos" />
+                <TextField fx:id="Direccion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionDireccionCorreo" prefHeight="22.0" prefWidth="225.0" promptText="Direccion" />
+                <TextField fx:id="Telefono" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionTelefono" prefHeight="22.0" prefWidth="225.0" promptText="Telefono" />
+                <TextField fx:id="Correo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#ftnValidacionDireccionCorreo" prefHeight="22.0" prefWidth="225.0" promptText="Correo" />
+                <ComboBox fx:id="Genero" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="225.0" promptText="Genero" />
+                <Button fx:id="Registarse" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ftnGuardarBD" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #1A84F4;" text="Registrarse" textFill="WHITE" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Dubai Bold" size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+          <HBox alignment="CENTER_LEFT" layoutY="-2.0" prefHeight="32.0" prefWidth="400.0" spacing="315.0">
+              <children>
+                  <Label alignment="CENTER" onMouseClicked="#MostrarInicioSesion" prefHeight="30.0" prefWidth="0.0" textFill="#1a84f4" underline="true">
+                      <padding>
+                          <Insets right="20.0" />
+                      </padding>
+                      <cursor>
+                          <Cursor fx:constant="HAND" />
+                      </cursor>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/restart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+                  </Label>
+              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#cerrarFormulario">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                      <Font name="Dubai Bold" size="18.0" />
+                  </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" onMousePressed="#cerrarFormulario" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/cerrar2.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+              </Label>
+              </children>
+              <opaqueInsets>
+                  <Insets />
+              </opaqueInsets>
+          </HBox>
+    </children>
+</AnchorPane>
