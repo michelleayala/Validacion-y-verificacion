@@ -144,9 +144,6 @@ public class CreacionTareas {
                 tar.executeUpdate();
                 System.out.println("Guardado");
             }
-
-
-
             cnx.close();
         } catch (SQLException ex) {
             System.err.println(ex);
