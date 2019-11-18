@@ -49,20 +49,7 @@ public class Registro implements Initializable {
         Statement st;
 
 
-        try {
-            st = cnx.createStatement();
-            ResultSet result = st.executeQuery("select Descripcion from tblsexo ");
-            while (result.next()) {
-
-                Genero.getItems().addAll((String) result.getString("Descripcion"));
-
-            }
-            cnx.close();
-        } catch (SQLException ex) {
-            System.err.println("error1");
-        }
-
-    }
+       System.println("funciona?");
 
     public void BorderColor_Documento(){
         Documento.setStyle(null);
